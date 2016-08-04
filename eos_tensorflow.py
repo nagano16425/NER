@@ -2,7 +2,7 @@
 Title:Tensorflow
 Detail:Except for the "eos"
 Design:Naonori Nagano
-Date:2016/08/01
+Date:2016/08/04
 """
 
 # Import Python Library
@@ -16,15 +16,22 @@ def  _read_words(filename):
    f = tf.gfile.GFile(filename, "r")
    word = []
    chunk = []
+   NER = []
    for line in f.readlines():
       if len(line)>3:
          pair = line.strip().split("\t")
+         pair_extend = pair[1].split("-")
          word.append(pair[0])
-         chunk.append(pair[1])
+         chunk.append(pair_extend[0])
+         if pair_extend[0] == "B" or pair_extend[0] == "I":
+            NER.append(pair_extend[1])
+         else:
+            NER.append("<eos>")
       else:
          word.append("<eos>")
          chunk.append("<eos>")
-   return word, chunk
+         NER.append("<eos>")
+   return word, chunk, NER
 
 # Build Vocabulary
 def _build_vocab(wordlist):
@@ -107,8 +114,8 @@ if __name__ == "__main__":
    data_path = "/home/nagano.16425/tensorflow/datasets/"
    train_path = os.path.join(data_path, sys.argv[1])
    test_path = os.path.join(data_path, sys.argv[2])
-   train_word_list, train_chunk_list = _read_words(train_path)
-   test_word_list, test_chunk_list = _read_words(test_path)
+   train_word_list, train_chunk_list, train_NER_list = _read_words(train_path)
+   test_word_list, test_chunk_list, test_NER_list = _read_words(test_path)
    word_to_id = _build_vocab(train_word_list)
    
    train_sent_list, train_sent_chunk, train_sent_len = _sentence_list(train_word_list, train_chunk_list, word_to_id)
