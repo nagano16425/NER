@@ -1,4 +1,4 @@
-# H1 NER
+# NER
 
 /basic    : LSTM  
 /basic2-1 : BLSTM+Dropout  
