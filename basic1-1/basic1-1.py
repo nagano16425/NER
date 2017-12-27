@@ -1,11 +1,11 @@
 """
-Title:Basic
+Title:Basic1-1
 Detail:InputSize(200)
        Embedding(100)
        Batch(10)
        LSTM(1Layer,150)
        Adam(Optimizer)
-       Dropout(1.0,1.0)
+       Dropout(0.8,0.5)
 Input:Traffic*.iob2
 Design:Naonori Nagano
 Date:2017/12/09
@@ -262,7 +262,7 @@ if __name__ == "__main__":
         # Training
         for i in range(iterations):
             batch_xs, batch_ys, batch_len = _batch_random(train_data, train_tag, train_sent_len, batch_size)
-            sess.run(train_step, feed_dict={x:batch_xs, y_:batch_ys, l:batch_len, keep_prob_wv:1.0, keep_prob_out:1.0})
+            sess.run(train_step, feed_dict={x:batch_xs, y_:batch_ys, l:batch_len, keep_prob_wv:0.8, keep_prob_out:0.5})
             result = sess.run(merged, feed_dict={x:train_data[0:batch_size],
                                                 y_:train_tag[0:batch_size],
                                                 l:train_sent_len[0:batch_size],

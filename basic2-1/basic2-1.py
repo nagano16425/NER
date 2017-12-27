@@ -9,7 +9,7 @@ Detail:InputSize(200)
        Dropout(0.8,0.5)
 Input:Traffic*.iob2
 Design:Naonori Nagano
-Date:2017/07/31
+Date:2017/12/01
 """
 
 # Import Python Library

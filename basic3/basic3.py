@@ -10,7 +10,7 @@ Detail:InputSize(200)
        Dropout(1.0,1.0)
 Input:Traffic**.iob2
 Design:Naonori Nagano
-Date:2017/08/01
+Date:2017/12/04
 """
 
 # Import Python Library
@@ -199,7 +199,7 @@ if __name__ == "__main__":
 
     # To define the size
     input_size = 200
-    batch_size = 5
+    batch_size = 10
     hidden_size = 150
     bi_hidden_size = 2 * hidden_size
     embed_size = 100
