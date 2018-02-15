@@ -8,3 +8,4 @@ This repository keeps my study source codes.
 - /basic3-1 : BLSTM+Dropout+CRF  
 - /basic3   : BLSTM+CRF
 - /Proposed1 : BLSTM+LSTM
+- /Proposed2 : BLSTM+GRU
