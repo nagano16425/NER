@@ -1,8 +1,8 @@
 """
-Title:Proposed1
-Detail:Configuration for Proposed1
+Title:Basic4
+Detail:Configuration for Basic4
 Design:Naonori Nagano
-Date:2017/12/27
+Date:2018/02/22
 """
 
 # To define data setting

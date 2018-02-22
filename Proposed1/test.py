@@ -1,6 +1,6 @@
 """
-Title:Proposed1
-Detail:Test for Proposed1
+Title:Basic4
+Detail:Test for Basic4 without LSTM
 Config:config_model.py
        util_tf.py
        model.py
@@ -9,7 +9,7 @@ Input:data.npy
       train_data**.npy
       my-model*
 Design:Naonori Nagano
-Date:2017/12/27
+Date:2018/02/22
 """
 
 import time

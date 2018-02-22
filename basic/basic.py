@@ -8,7 +8,7 @@ Detail:InputSize(200)
        Dropout(1.0,1.0)
 Input:Traffic*.iob2
 Design:Naonori Nagano
-Date:2017/12/09
+Date:2018/02/22
 """
 
 # Import Python Library
@@ -146,7 +146,7 @@ if __name__ == "__main__":
     print("---read start---")
 
     # Input dataset
-    data_path = "/home/coin/nagano.16425/tensorflow/datasets/"
+    data_path = "./"
     train_path = os.path.join(data_path, "Traffic"+sys.argv[1]+".iob2")
     test_path = os.path.join(data_path, "Traffic"+sys.argv[2]+".iob2")
     train_word_list, train_chunk_list, train_tag_list = _read_words(train_path)

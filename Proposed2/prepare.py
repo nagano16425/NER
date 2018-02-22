@@ -2,7 +2,7 @@
 Title:Proposed2
 Detail:Prepare for Proposed2
 Design:Naonori Nagano
-Date:2018/1/15
+Date:2018/02/22
 """
 
 import collections, os

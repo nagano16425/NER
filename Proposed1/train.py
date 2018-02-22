@@ -1,6 +1,6 @@
 """
-Title:Proposed1
-Detail:Training for Proposed1
+Title:Basic4
+Detail:Training for Basic4
 Config:config_model.py
        util_tf.py
        model.py
@@ -8,7 +8,7 @@ Config:config_model.py
 Input:data.npy
       train_data**.npy
 Design:Naonori Nagano
-Date:2017/12/27
+Date:2018/02/22
 """
 
 import time

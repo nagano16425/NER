@@ -3,7 +3,7 @@ Title:Proposed2
 Detail:pre-training
 Input:Traffic**.iob2
 Design:Naonori Nagano
-Date:2018/1/15
+Date:2018/02/22
 """
 
 import collections, os, sys
@@ -93,7 +93,7 @@ def _make_word_dict(word_list):
 if __name__ == "__main__":
     split = ["train", "test"]
 
-    data_path = "datasets/"
+    data_path = "./"
     train_path = str(sys.argv[1])
     test_path = str(sys.argv[2])
     save_path = "data/"

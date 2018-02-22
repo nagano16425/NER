@@ -1,8 +1,8 @@
 """
-Title:Proposed1
-Detail:Model for Proposed1(BLSTM+LSTM)
+Title:Basic4
+Detail:Model for Basic4(BLSTM+LSTM)
 Design:Naonori Nagano
-Date:2017/12/27
+Date:2018/02/22
 """
 
 import tensorflow as tf

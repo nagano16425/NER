@@ -8,7 +8,7 @@ Config:config_model.py
 Input:data.npy
       train_data**.npy
 Design:Naonori Nagano
-Date:2018/1/15
+Date:2018/02/22
 """
 
 import time

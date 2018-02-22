@@ -1,8 +1,8 @@
 """
-Title:Proposed1
-Detail:Prepare for Proposed1
+Title:Basic4
+Detail:Prepare for Basic4
 Design:Naonori Nagano
-Date:2017/12/27
+Date:2018/02/22
 """
 
 import collections, os
